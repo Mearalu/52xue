@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>微信测试页面</title>
+    <script type="text/javascript" src="http://10.10.10.101/python/52xue/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <h1 >微信测试</h1>
+	<input id="surl" type="text" value="http://127.0.0.1" />
+    <textarea id="info" style="resize: none;width: 400px;height: 240px;max-width: 400px;max-height: 240px;"></textarea>
+    <textarea id="reply" style="resize: none;width: 400px;height: 240px;max-width: 400px;max-height: 240px;"></textarea><br />
+    <input id="send" type="button" value="send" />
+    <script type="text/javascript">
+    function ajax(event) {
+        try {
+            event.preventDefault();
+        } catch (err) {
+            window.event.returnValue = false;
+        }
+        var sxml = "<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>@ctime</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[@msg]]></Content><MsgId>@msgId</MsgId></xml>";
+        //$("Content", $(sxml)).text($("#info").val());
+        var myDate = new Date();
+        sxml = sxml.replace(/@msg/gm, $("#info").val());
+        sxml = sxml.replace(/@ctime/gm,myDate.getTime());
+        $.ajax({
+            type: "post",
+            contentType: "text/xml;charset='utf-8'",//application/x-www-form-urlencoded
+            url: $("#surl").val(),
+            data: sxml,
+            success: Callback,
+            error: err,
+            dataType: "text"
+        });
+    }
+    var Callback = function (xml, status) {
+        /*var str = "接收方帐号（收到的OpenID）" + $("ToUserName", xml).text();
+        str += "\n开发者微信号:" + $("FromUserName", xml).text();
+        str += "\n创建时间:" + $("CreateTime", xml).text();
+        str += "\n消息类型:" + $("MsgType", xml).text();
+        str += "\n内容:" + $("Content", xml).text();*/
+        $("#reply").text(xml);
+    }
+    function err(XMLHttpRequest, textStatus){
+        $("#reply").text("出错了")
+    }
+    $("#send").click(ajax);
+    </script>
+</body>
+</html>
