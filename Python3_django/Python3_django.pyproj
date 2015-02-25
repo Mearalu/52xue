@@ -30,6 +30,9 @@
   <ItemGroup>
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="manage.py" />
@@ -40,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\templates\index.html" />
-    <Content Include="db.sqlite3" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
