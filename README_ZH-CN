@@ -1,2 +1,4 @@
-中文测试 
-chinese test
+dependency:
+python3.4.2 https://www.python.org/downloads/
+tornodo https://github.com/tornadoweb/tornado/tree/v4.0.2
+django https://github.com/django/django/tree/1.7.4
