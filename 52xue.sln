@@ -3,24 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python3.tornado", "python3.tornado\python3.tornado.pyproj", "{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python3_django", "Python3_django\python3_django.pyproj", "{52601A08-AF19-4DDB-A50C-D38157D0EF63}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python3_django", "Python3_django\Python3_django.pyproj", "{52601A08-AF19-4DDB-A50C-D38157D0EF63}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python3_tornado", "python3_tornado\python3_tornado.pyproj", "{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Public", "http://localhost:3027", "{227ECA0C-A437-442D-BFDE-2D8C603DD0E8}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Public", "http://localhost:6026", "{ED11D251-F930-4E5E-82B5-65251AF20F7F}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_3027"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_6026"
 		Debug.AspNetCompiler.PhysicalPath = "Public\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3027\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6026\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_3027"
+		Release.AspNetCompiler.VirtualPath = "/localhost_6026"
 		Release.AspNetCompiler.PhysicalPath = "Public\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3027\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6026\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
@@ -34,16 +34,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52601A08-AF19-4DDB-A50C-D38157D0EF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52601A08-AF19-4DDB-A50C-D38157D0EF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52601A08-AF19-4DDB-A50C-D38157D0EF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52601A08-AF19-4DDB-A50C-D38157D0EF63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{227ECA0C-A437-442D-BFDE-2D8C603DD0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{227ECA0C-A437-442D-BFDE-2D8C603DD0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{227ECA0C-A437-442D-BFDE-2D8C603DD0E8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{227ECA0C-A437-442D-BFDE-2D8C603DD0E8}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F63DA78-9FBD-46E3-BA9A-8D816AD9F210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED11D251-F930-4E5E-82B5-65251AF20F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED11D251-F930-4E5E-82B5-65251AF20F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED11D251-F930-4E5E-82B5-65251AF20F7F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED11D251-F930-4E5E-82B5-65251AF20F7F}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
