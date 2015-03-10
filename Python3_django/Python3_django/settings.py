@@ -15,17 +15,21 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         # Or path to database file if using sqlite3.
-        'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
+        #'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
+        'NAME':'52xue',
         # Not used with sqlite3.
-        'USER': '',
+        'USER': 'root',
         # Not used with sqlite3.
-        'PASSWORD': '',
+        'PASSWORD': 'ljcqq123',
         # Set to empty string for localhost. Not used with sqlite3.
-        'HOST': '',
+        'HOST': '172.16.15.58',
         # Set to empty string for default. Not used with sqlite3.
         'PORT': '',
+        'OPTIONS': {
+             'autocommit': True,
+         },
     }
 }
 
@@ -79,6 +83,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    path.join(path.dirname(PROJECT_ROOT),"public","static"),
 )
 
 # List of finder classes that know how to find static files in
